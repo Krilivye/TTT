@@ -31,6 +31,7 @@ setup(name="Tests Tout-Terrain",
       author="Pierre Bousquié",
       author_email="pierre@yaal.fr",
       packages=['TTT'],
+      install_requires=["werkzeug"],
       tests_require=['tox'],
       cmdclass= {'test': Tox },
       )
