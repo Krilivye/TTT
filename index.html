@@ -21,25 +21,55 @@
 
 class: center, middle
 
-# Title
+# Tests Tout-Terrain
+## (Python édition)
 
 ---
 
 # Agenda
 
-1. Introduction
-2. Deep-dive
-3. ...
+1. Les tests
+2. Les terrains dangereux
+3. Les outils
 
 ---
 
-# Introduction
+# Les Tests?
+
+- Les tests unitaires
+- Les tests fonctionnels
+- Les tests dynamiques
+- Les tests de charges
+- Les tests aux limites
+
+---
+
+# Les tests unitaires
+
+```python
+def super_additionneur(param1, param2):
+    return param1 + param2
+
+assert super_additionneur(1, 1) == 2
+assert super_additionneur(3, 5) == 8
+assert super_additionneur(1, -1) == 0
+assert super_additionneur(2.5, 5.) == 7.5
+*assert super_additionneur("vingt", " et un") == "vingt et un"
+```
+
+???
+Exemple sametmax.com
+---
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+        var slideshow = remark.create({
+            highlightLanguage: 'python',
+            highlightStyle: 'solarized-light',
+            highlightLines: true,
+        });
     </script>
   </body>
 </html>
