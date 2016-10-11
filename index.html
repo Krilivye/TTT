@@ -4,14 +4,11 @@
     <title>Title</title>
     <meta charset="utf-8">
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+      @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800';
+      @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
-      body { font-family: 'Droid Serif'; }
+      body { font-family: 'Open Sans', sans-serif; }
       h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
       .footnote {
@@ -32,22 +29,89 @@
           background-color: #073642;
           nop:#eee8d5;
       }
+
+      .triangle-left{
+	    width: 0;
+	    height: 0;
+	    border-bottom: 80em solid rgba(255,237,0,0.8);
+	    border-right: 34em solid transparent;
+	    position: absolute;
+	    top: -620px;
+	    left: 0;
+      }
+
+      .triangle-left-bis{
+	    width: 0;
+	    height: 0;
+	    border-bottom: 70em solid rgba(255,237,0,0.55);
+	    border-right: 34em solid transparent;
+	    position: absolute;
+	    top: -590px;
+	    left: 0;
+      }
+
+      .title-opening{
+      	position: absolute;
+      	z-index: 30;
+        top: 460px;
+        left: 72px;
+      }
+
+        .title-opening h1{
+          font-weight: 300;
+          font-size: 43px;
+          color:#323232;
+          line-height: 0.8em;
+          margin-bottom: 0em;
+        }
+
+        .title-opening h2{
+          font-weight: 800;
+          font-size: 17px;
+          color:#fff;
+        }
+
+        .line{
+          width: 200px;
+          height: 5px;
+          border-top: 5px solid #fff;
+          z-index: 50;
+          position: absolute;
+          top: 548px;
+          left: 220px;
+        }
+
+      .logo-min{
+        position: absolute;
+        z-index: 40;
+        top:392px;
+        left:72px;
+      }
     </style>
   </head>
   <body>
     <textarea id="source">
 
-class: center, middle
-background-image: url(img/wrc-wales-rally-gb-loeb-01.jpg)
+class: y-slide-opening,
+background-image: url(img/bgi-opening.png)
 
+.triangle-left[]
+.triangle-left-bis[]
+.logo-min[![logo yaal](img/logo-yaal.png)]
+.title-opening[
 # Tests Tout-Terrain
-## (Python édition)
+## Python édition]
+.line[]
 ---
+class: y-slide-info,
+background-color: #FFED00
 # Big ups:
 ## Pyconf
 ## Yaal
 ---
 
+class: y-slide-info,
+background-color: #FFED00
 # Agenda
 
 1. Les tests
@@ -67,13 +131,13 @@ Mais pour l'instant...
 - Performances
 - Sécurité
 
---
+---
 # Les tests?
 Deux approches:
 - Black box
 - White box
 
---
+---
 # Les tests?
 1. Unitaire (bas niveau)
 2. Intégration (haut niveau)
