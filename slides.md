@@ -121,7 +121,7 @@ class: y-slide-white,
 .simple-text-list-small[
   Volume</br>
   Durée</br>
-  Concurence</br>
+  Concurrence</br>
   Temps de récupération]]
 
 .listing[
