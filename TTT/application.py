@@ -8,4 +8,7 @@ def application(environ, start_response):
 
     to_json = { "result": super_additionneur(_data["param1"], _data["param2"]) }
 
-    return werkzeug.Response(json.dumps(to_json), mimetype='application/json')(environ, start_response)
+    return werkzeug.Response(
+        json.dumps(to_json),
+        mimetype='application/json') \
+            (environ, start_response)

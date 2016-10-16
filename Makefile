@@ -1,4 +1,4 @@
-.PHONY: run integration check
+.PHONY: run integration check fullcheck ulticheck env
 
 run:
 	firefox index.html
@@ -11,3 +11,9 @@ check:
 
 fullcheck:
 	.tox/py35/bin/pytest --cov TTT/ -n auto
+
+ulticheck:
+	.tox/py35/bin/pytest --cov TTT/ -n auto --flake8
+
+env:
+	source .tox/py35/bin/activate
