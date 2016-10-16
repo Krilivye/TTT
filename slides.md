@@ -13,6 +13,21 @@ class: y-slide-info,
 background-color: #FFED00
 
 .cadre-blanc[
+# \#Dispo sur github!!!
+.center[
+.logo-github[![](img/GitHub-Mark-120px-plus.png)]
+
+- https://github.com/Krilivye/TTT
+- https://krilivye.github.io/TTT/
+
+    ]
+.twitter[@pierrebousquie | @yaal_fr ]
+]
+---
+class: y-slide-info,
+background-color: #FFED00
+
+.cadre-blanc[
 # \#Big ups
 .line[]
 .logo-pyconf[![](img/logo-pycon.svg)]
@@ -309,11 +324,12 @@ background-image: url(img/bgi-concurrence-min.png)
 .bg-darker[
 .cadre-jaune[
   # Concurrence
-  .line[]
-  .simple-text.simple-text-white.center[
-    Test run en parralèle</br>
-    Multiple threads!
-  ]
+.line[]
+.simple-text.simple-text-white.center[
+1. Test run en parralèle
+2. Multiple threads!
+3. Asynctest
+]
   .twitter.twitter-white[@pierrebousquie | @yaal_fr]
 ]
 ]
