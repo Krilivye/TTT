@@ -14,6 +14,3 @@ fullcheck:
 
 ulticheck:
 	.tox/py35/bin/pytest --cov TTT/ -n auto --flake8
-
-env:
-	source .tox/py35/bin/activate

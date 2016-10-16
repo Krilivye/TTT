@@ -3,8 +3,10 @@ from setuptools import setup
 from setuptools.command.test import test as TestCommand
 import sys
 
+
 class Tox(TestCommand):
     user_options = [('tox-args=', 'a', "Arguments to pass to tox")]
+
     def initialize_options(self):
         TestCommand.initialize_options(self)
         self.tox_args = None
@@ -25,14 +27,14 @@ class Tox(TestCommand):
         sys.exit(errno)
 
 
-setup(name="Tests Tout-Terrain",
-      version="1.0",
-      description="Tests Tout-terrain",
-      author="Pierre Bousquié",
-      author_email="pierre@yaal.fr",
-      packages=['TTT'],
-      install_requires=["werkzeug"],
-      tests_require=['tox'],
-      cmdclass= {'test': Tox },
-      )
-
+setup(
+    name="Tests Tout-Terrain",
+    version="1.0",
+    description="Tests Tout-terrain",
+    author="Pierre Bousquié",
+    author_email="pierre@yaal.fr",
+    packages=['TTT'],
+    install_requires=["werkzeug"],
+    tests_require=['tox'],
+    cmdclass={'test': Tox},
+)

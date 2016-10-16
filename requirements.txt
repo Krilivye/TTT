@@ -1,3 +1,0 @@
-webtest
-werkzeug
-pytest

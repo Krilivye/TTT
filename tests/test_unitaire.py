@@ -1,5 +1,6 @@
 from TTT.exemples import super_additionneur
 
+
 def test_super_additionneur():
 
     assert super_additionneur(1, 1) == 2
