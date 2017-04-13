@@ -3,6 +3,8 @@ Tests Tout-Terrain
 
 Dépot de la conférence pyconfr 2016 à renne sur les tests.
 
+https://krilivye.github.io/TTT/#1
+
 ## Prérequis
 
 python
